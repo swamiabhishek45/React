@@ -16,7 +16,7 @@ function App() {
           <button
             onClick={() => setColor("red")}
             className={`py-2 px-3 text-xs font-bold leading-none  text-white border border-gray rounded-full
-          hover:text-black focus:outline-none transition ease-in-out duration-150`}
+          hover:text-black focus:ring-2 ring-black transition ease-in-out duration-150`}
             style={{ backgroundColor: "red" }}
           >
             Red
@@ -25,7 +25,7 @@ function App() {
           <button
             onClick={() => setColor("Blue")}
             className={`py-2 px-3 text-xs font-bold leading-none  text-white border border-gray rounded-full 
-          hover:text-black focus:outline-none transition ease-in-out duration-150`}
+          hover:text-black focus:ring-2 ring-black transition ease-in-out duration-150`}
             style={{ backgroundColor: "blue" }}
           >
             Blue
@@ -34,7 +34,7 @@ function App() {
           <button
             onClick={() => setColor("yellow")}
             className={`py-2 px-3 text-xs font-bold leading-none  text-grey border border-gray rounded-full 
-          hover:text-black focus:outline-none transition ease-in-out duration-150`}
+          hover:text-black focus:ring-2 ring-black transition ease-in-out duration-150`}
             style={{ backgroundColor: "yellow" }}
           >
             Yellow
@@ -43,7 +43,7 @@ function App() {
           <button
             onClick={() => setColor("green")}
             className={`py-2 px-3 text-xs font-bold leading-none  text-white border border-gray rounded-full 
-          hover:text-black focus:outline-none transition ease-in-out duration-150`}
+          hover:text-black focus:ring-2 ring-black transition ease-in-out duration-150`}
             style={{ backgroundColor: "green" }}
           >
             Green
@@ -52,7 +52,7 @@ function App() {
           <button
             onClick={() => setColor("purple")}
             className={`py-2 px-3 text-xs font-bold leading-none  text-white border border-gray rounded-full 
-          hover:text-black focus:outline-none transition ease-in-out duration-150`}
+          hover:text-black focus:ring-2 ring-black transition ease-in-out duration-150`}
             style={{ backgroundColor: "purple" }}
           >
             Purple
