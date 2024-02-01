@@ -2,7 +2,7 @@ import React from 'react'
 
 function sample() {
   return (
-      <h1>Hello I am component</h1>
+      <h1>Hello I am sample component</h1>
 
   )
 }

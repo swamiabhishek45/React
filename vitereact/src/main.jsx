@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import Sample from "./sample.jsx";
-import "./index.css";
+// import "./index.css";
 
 function MyApp() {
-  return (
+  return ( 
     <div>
-      <h1>Custom App!!</h1>
+      <h2>This is MyApp Component</h2>
     </div>
   );
 }
@@ -35,10 +35,13 @@ const reactElement = React.createElement(
         target: "_blank"
     },
     "Click me to visit Google",
-    username
+   
+   username
 )
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 
     reactElement
+    // <MyApp />
+
 );
