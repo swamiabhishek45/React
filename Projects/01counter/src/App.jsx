@@ -24,8 +24,8 @@ function App() {
       <h1>React with vite</h1>
       <h2>Counter value: {counter}</h2>
 
-      <button onClick={addValue}>Increase Value {counter}</button>
-      <button onClick={removeValue}>Decrease Value {counter}</button>
+      <button onClick={addValue}>Increase Value</button>
+      <button onClick={removeValue}>Decrease Value</button>
     </>
   );
 }
