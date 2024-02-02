@@ -1,50 +1,32 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 
 function App() {
+  let [counter, setCounter] = useState(15);
 
-  // let counter = 0; // variables
-  let [counter, setCounter] = useState(0); // hook to change state
-
-
+  // let counter = 5;
   const addValue = () => {
-    // counter += 1;
-    // console.log('value added', {counter});
-
-    if(counter < 20){
-      setCounter(counter+1);
-    }
-
-    // setCounter(prevCounter => prevCounter + 1); // 1
-    // setCounter(prevCounter => prevCounter + 1); // 2
-    // setCounter(prevCounter => prevCounter + 1); // 3
-    // setCounter(prevCounter => prevCounter + 1); // 4
-      
-
+    // console.log("Clickd", counter);
+    // counter = counter + 1;
+    setCounter(counter + 1);
   };
+
   const removeValue = () => {
-    // counter -= 1;
-    // console.log('value removed', {counter});
-
-    if(counter >= 1){
-      
-      setCounter(counter-1);
+    if (counter > 0) {
+      setCounter(counter - 1);
     }
-    
-
   };
 
   return (
     <>
-      <h1>Number Counter</h1>
-      <h2>Count: {counter}</h2>
-      <button onClick={addValue}>
-        Increase
-      </button>
+      <h1>React with vite</h1>
+      <h2>Counter value: {counter}</h2>
 
-      <button onClick={removeValue} >Decrease</button>
+      <button onClick={addValue}>Increase Value {counter}</button>
+      <button onClick={removeValue}>Decrease Value {counter}</button>
+      
     </>
   );
 }
 
-export default App
+export default App;
