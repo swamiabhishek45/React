@@ -10,6 +10,12 @@ function App() {
     // counter = counter + 1;
     if (counter < 20) {
       setCounter(counter + 1);
+
+      // Change state many times
+      // setCounter(prevCounter => prevCounter + 1)
+      // setCounter(prevCounter => prevCounter + 1)
+      // setCounter(prevCounter => prevCounter + 1)
+      // setCounter(prevCounter => prevCounter + 1)
     }
   };
 
