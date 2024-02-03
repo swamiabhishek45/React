@@ -1,10 +1,12 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 
 function Practice() {
   const [length, setLength] = useState(8);
   const [numAllow, setNumAllow] = useState(false);
   const [charAllow, setCharAllow] = useState(false);
   const [password, setPassword] = useState("");
+
+  const passwordRef = useRef();
 
   const passwordGenerator = useCallback(() => {
     let pass = "";
@@ -18,6 +20,15 @@ function Practice() {
       setPassword(pass);
     }
   }, [length, numAllow, charAllow, setPassword]);
+
+const copyPassToClipboard = useCallback(() => {
+
+  passwordRef.current?.select();
+
+  window.navigator.clipboard.writeText(password);
+}, [password
+]);
+
 useEffect(() => {
   passwordGenerator();;
 }, [length, numAllow, charAllow, passwordGenerator]);
@@ -32,9 +43,11 @@ useEffect(() => {
             placeholder="Password"
             readOnly
             value={password}
+            ref={passwordRef}
           />
 
           <button
+            onClick={copyPassToClipboard}
             //   style={bg}
             className="bg-blue-700 text-white p-2 shrink-0"
           >
@@ -63,7 +76,9 @@ useEffect(() => {
               defaultChecked={numAllow}
               id="numberInput"
               className="mr-3"
-              onChange={(prev) => !prev}
+              onChange={() => {
+                setNumAllow((prev) => !prev);
+              }}
             />
             <label htmlFor="numberInput">Numbers</label>
           </div>
@@ -71,8 +86,10 @@ useEffect(() => {
           <div className="flex">
             <input
               type="checkbox"
-              onChange={(prev) => !prev}
               className="mr-3"
+              onChange={() => {
+                setCharAllow((prev) => !prev);
+              }}
             />
             <label htmlFor="">Characters</label>
           </div>

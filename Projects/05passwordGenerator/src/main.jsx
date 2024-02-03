@@ -6,7 +6,7 @@ import Practice from './Practice.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <App /> */}
-    <Practice />
+    <App />
+    {/* <Practice /> */}
   </React.StrictMode>,
 )
