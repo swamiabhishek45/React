@@ -2,16 +2,15 @@ import { useEffect, useState } from "react";
 
 function useCurrencyInfo(currency) {
   const [data, setData] = useState({});
-
+  const URL = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currency}.json`;
+    
   useEffect(() => {
-    fetch(
-      `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currency}.json`
-    )
+    fetch(URL)
       .then((res) => res.json())
       .then((res) => setData(res[currency]));
-    console.log(data);
+    // console.log(data);
   }, [currency]);
-  console.log(data);
+  // console.log(data);
   return data;
 }
 

@@ -3,7 +3,7 @@
  * currency to another.
  * @returns The App component is being returned.
  */
-import { useEffect, useState } from "react";
+import {useState } from "react";
 // import "./App.css";
 import InputBox from "./components/InputBox";
 import useCurrencyInfo from "./hooks/useCurrencyInfo";
