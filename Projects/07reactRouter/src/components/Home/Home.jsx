@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="mx-auto w-full max-w-7xl">
       <aside className="relative overflow-hidden text-black rounded-lg sm:mx mx-2 sm:py-8">
-        <div className="relative z-10 max-w-screen-xl px-4  pb-20  mx-auto sm:px- lg:px-1">
+        <div className=" z-10 max-w-screen-xl px-4  pb-20  mx-auto sm:px- lg:px-1">
           <div className="max-w-lg sm:mt-1 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
             {/* <h2 className="text-4xl font-bold sm:text-5xl">
               Download Now
@@ -59,10 +59,10 @@ export default function Home() {
             </p>
 
             <div className="flex gap-4 mt-8">
-              <button className="bg-orange-600 text-white p-4 px-8 border rounded-full hover:bg-orange-700 font-bold">
+              <button className="bg-orange-600 text-white cursor-pointer p-4 px-8 border rounded-full hover:bg-orange-700 font-bold">
                 Contact Me
               </button>
-              <button className="bg-gray-600 text-white p-4 px-8 border rounded-full hover:bg-gray-700 font-bold">
+              <button className="bg-gray-600 text-white cursor-pointer p-4 px-8 border font-bold rounded-full hover:bg-gray-700 ">
                 Download CV
               </button>
             </div>

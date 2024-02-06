@@ -12,7 +12,9 @@ export default function Header() {
               className="mr-3 h-12"
               alt="Logo"
             /> */}
-            <h1 className="mr-3 h-12 text-3xl text-orange-700 font-bold">Abhishek.</h1>
+            <h1 className="mr-3 h-12 text-3xl text-orange-700 font-bold">
+              Abhishek.
+            </h1>
           </Link>
           {/* <div className="flex items-center lg:order-2">
             <Link
@@ -59,14 +61,14 @@ export default function Header() {
               </li>
               <li>
                 <NavLink
-                  to="/contact"
+                  to="/projects"
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${
                       isActive ? "text-orange-700" : "to-gray-700"
                     } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }
                 >
-                  Contact Us
+                  My Projects
                 </NavLink>
               </li>
               <li>
@@ -79,6 +81,19 @@ export default function Header() {
                   }
                 >
                   Github
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink
+                  to="/contact"
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 duration-200 ${
+                      isActive ? "text-orange-700" : "to-gray-700"
+                    } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                  }
+                >
+                  Contact Us
                 </NavLink>
               </li>
             </ul>
