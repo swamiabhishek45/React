@@ -4,20 +4,22 @@ import { useLoaderData } from "react-router-dom";
 function Github() {
 
   const data = useLoaderData();
+  // console.log(data);
 
-  // const [data, setData] = useState([]);
+  // const [Data, setData] = useState([]);
   // useEffect(() => {
   //   fetch("https://api.github.com/users/swamiabhishek45")
   //     .then(response => response.json())
-  //     .then((data) => {
-  //       setData(data);
+  //     .then((Data) => {
+  //       setData(Data);
   //     });
   // }, []);
   return (
     <>
     <div className="bg-gray-700 text-white p-4 text-3xl text-center flex flex-col justify-center items-center gap-4">
       Github Followers: {data.followers}
-      <img src={data.avatar_url} alt="sit pic" width={300} className="" />
+      
+      <img src={data.avatar_url} alt="profile pic" width={300} className="" />
     </div>
     </>
   );
