@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Hamburger from "../Hamburger/Hamburger";
 
 export default function Home() {
   return (
@@ -44,21 +45,25 @@ export default function Home() {
             alt="image1"
           /> */}
           <div className="">
-            <h3 className="text-orange-700 text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
+            <h3 className="text-orange-700 text-center sm:flex sm:justify-start text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
               FULL STACK ENGINEER
             </h3>
 
-            <h1 className="text-7xl font-bold mt-4">Hi, my name is</h1>
-            <h1 className="text-7xl font-bold my-4">Abhishek Swami</h1>
+            <h1 className=" text-5xl sm:text-7xl font-bold mt-4 text-center sm:flex sm:justify-start">
+              Hi, my name is
+            </h1>
+            <h1 className=" text-7xl sm:text-7xl  font-bold my-4 text-center sm:flex sm:justify-start">
+              Abhishek Swami
+            </h1>
 
-            <p className="subtitle max-w-[490px] ml-0 mx-auto xl:max-0">
+            <p className="subtitle max-w-[490px] ml-0 mx-auto xl:max-0 text-center sm:text-start sm:flex sm:justify-start">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
               odit animi dolore non aspernatur, minima dolor odio in commodi aut
               explicabo quasi perferendis aperiam officia. Animi pariatur porro
               fugiat minima.
             </p>
 
-            <div className="flex gap-4 mt-8">
+            <div className="flex justify-center sm:justify-start gap-4 mt-8">
               <button className="bg-orange-600 text-white cursor-pointer p-4 px-8 border rounded-full hover:bg-orange-700 font-bold">
                 Contact Me
               </button>
