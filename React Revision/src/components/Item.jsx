@@ -1,27 +1,28 @@
 import React from "react";
 
 function Item({ name = "Water Bottel", isPacked = true }) {
-//   if (isPacked) {
-//     return <li>-{name} ☑️</li>;
-//   } else{
-//     return <li>-{name}</li>
-//   }
 
-// OR
+  //   if (isPacked) {
+  //     return <li>-{name} ☑️</li>;
+  //   } else{
+  //     return <li>-{name}</li>
+  //   }
 
-// return (
-//     <li className="item">
-//         {isPacked? ( <del>{name + '☑️'}</del>) : (name)}
-//     </li>
-// )
+  // OR
 
-// OR
+//   return (
+//      <li className="">
+//         {isPacked? <del>{name +"☑️"}</del> : name + "❌"}
+//      </li>
+//   )
 
-return (
+  // OR
+
+  return (
     <li>
-        {name} {isPacked && "☑️"}
+      {name} {isPacked && "☑️"}
     </li>
-)
+  );
 }
 
 export default Item;
