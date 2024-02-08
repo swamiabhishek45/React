@@ -64,9 +64,11 @@ export default function Home() {
             </p>
 
             <div className="flex justify-center sm:justify-start gap-4 mt-8">
+              <Link to="/contact">
               <button className="bg-orange-600 text-white cursor-pointer p-4 px-8 border rounded-full hover:bg-orange-700 font-bold">
                 Contact Me
               </button>
+              </Link>
               <button className="bg-gray-600 text-white cursor-pointer p-4 px-8 border font-bold rounded-full hover:bg-gray-700 ">
                 Download CV
               </button>
