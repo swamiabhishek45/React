@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 
 function App() {
   const [advice, setAdvice] = useState("Click below to Get Some Advice");
@@ -9,9 +9,9 @@ function App() {
     const res = await fetch("https://api.adviceslip.com/advice");
     const data = await res.json();
     // console.log(data.slip.advice);
-    setAdvice(data.slip.advice)
-    setCount(count+1);
-  }
+    setAdvice(data.slip.advice);
+    setCount(count + 1);
+  };
   return (
     <>
       <h1>{advice}</h1>
@@ -23,4 +23,4 @@ function App() {
   );
 }
 
-export default App
+export default App;

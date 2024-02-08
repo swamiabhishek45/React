@@ -34,6 +34,7 @@ function App() {
 
     setButton({ backgroundColor: "green", textContent: "Copied!" });
 
+    // for user best experience UI
     window.navigator.clipboard.writeText(password);
   }, [password]);
 
@@ -105,7 +106,7 @@ function App() {
               }}
             />
             <label htmlFor="charInput" className="m-2">
-              Characters
+              Symbols
             </label>
           </div>
         </div>

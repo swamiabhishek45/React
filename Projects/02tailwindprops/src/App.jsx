@@ -3,6 +3,7 @@ import Card from './components/Card';
 import Cart from './components/Cart';
 function App() {
 
+  // optional -- no needed code
   let obj = {
     username: "Abhi",
     email: "abhijit2406@gmail.com"
