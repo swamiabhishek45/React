@@ -3,9 +3,9 @@ import { ArrowUpRight } from "lucide-react";
 
 function Card() {
   return (
-    <div className="w-[300px] rounded-md border">
+    <div className="w-[300px] rounded-md border mb-10">
       <img
-        src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+        src={{}}
         alt="Laptop"
         className="h-[200px] w-full rounded-t-md object-cover"
       />
