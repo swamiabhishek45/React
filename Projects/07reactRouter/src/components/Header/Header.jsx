@@ -3,11 +3,6 @@ import { Link, NavLink } from "react-router-dom";
 import ThemeBtn from "../Theme Button/ThemeBtn";
 
 export default function Header() {
-  // const [isOpen, setIsOpen] = useState(true);
-
-  // const toggleMenu = () => {
-  //   setIsOpen(!isOpen);
-  // };
 
   const [open, setOpen] = useState(false);
 
@@ -113,7 +108,6 @@ export default function Header() {
               </li>
             </ul>
           </div>
-          {/* )} */}
         </div>
       </nav>
     </header>

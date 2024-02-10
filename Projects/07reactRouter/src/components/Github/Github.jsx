@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, Link } from "react-router-dom";
 
 function Github() {
 
   const data = useLoaderData();
-  // console.log(data);
+  console.log(data);
 
   // const [Data, setData] = useState([]);
   // useEffect(() => {
@@ -20,6 +20,8 @@ function Github() {
       Github Followers: {data.followers}
       
       <img src={data.avatar_url} alt="profile pic" width={300} className="" />
+      
+
     </div>
     </>
   );

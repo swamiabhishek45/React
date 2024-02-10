@@ -37,28 +37,23 @@ export default function Home() {
 
             <div className="flex justify-center sm:justify-start gap-4 mt-8">
               <Link to="/contact">
-                <button className="bg-orange-600 text-white cursor-pointer p-4 px-8 border rounded-full hover:bg-orange-700 font-bold">
+                <button className="bg-orange-600 text-white cursor-pointer p-4 px-8  outline-none rounded-full hover:bg-orange-700 font-bold">
                   Contact Me
                 </button>
               </Link>
-              <button className="bg-gray-600 text-white cursor-pointer p-4 px-8 border font-bold rounded-full hover:bg-gray-700 ">
+              <button className="bg-gray-600 text-white cursor-pointer p-4 px-8  outline-none font-bold rounded-full hover:bg-gray-700 ">
                 Download CV
               </button>
             </div>
           </div>
         </div>
       </aside>
-      {/* <div className="">
+      <div className="">
         <h1 className="text-center text-2xl sm:text-5xl  font-medium">
           My Services
         </h1>
-        <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium">
-          Lorem Ipsum Yojo
-        </h1>
-        <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium">
-          Lorem Ipsum Yojo
-        </h1>
-      </div> */}
+        
+      </div>
     </div>
   );
 }

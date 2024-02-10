@@ -126,7 +126,7 @@ export default function Contact() {
                   className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 dark:bg-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                 />
               </div>
-
+                
               <button
                 type="submit"
                 className="md:w-32 bg-orange-700 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-orange-600 transition ease-in-out duration-300"

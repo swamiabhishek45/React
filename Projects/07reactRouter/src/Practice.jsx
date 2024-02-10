@@ -24,19 +24,14 @@ import Layout from "./Layout";
 //     ]
 //   }
 // ])
-
 const router = createBrowserRouter(
-  createRoutesFromElements( 
-    <Route path='/' element={<Layout />}>
-      <Route path='/' element={<Home />}/>
-      <Route path='/' element={<Home />}/>
-      <Route path='/' element={<Home />}/>
-      <Route path='/user/:userid' element={<User />}/>
+  createRoutesFromElements(
+    <Route path='/'  element={<Layout />}>
+      <Route path='/about' element={<About />} />
 
     </Route>
   )
 )
-
 ReactDOM.createRoot(document.getElementById("root")).Render(
   <React.StrictMode>
     <RouterProvider router={router} />
