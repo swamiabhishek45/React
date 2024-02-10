@@ -22,20 +22,26 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-500  font-medium">
                 <li className="mb-4">
-                  <Link
+                  <NavLink
                     to="/"
-                    className="dark:hover:text-orange-600 hover:text-orange-600"
+                    className={({ isActive }) =>
+                      `dark:hover:text-orange-600 hover:text-orange-600 
+                      ${isActive ? "text-orange-700" : " to-gray-700"}`
+                    }
                   >
                     Home
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link
+                  <NavLink
                     to="/about"
-                    className="dark:hover:text-orange-600 hover:text-orange-600"
+                    className={({
+                      isActive,
+                    }) => `dark:hover:text-orange-600 hover:text-orange-600
+                    ${isActive ? "text-orange-700" : " to-gray-700"}`}
                   >
                     About
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </div>
