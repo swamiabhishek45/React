@@ -41,17 +41,17 @@ function App() {
   }, []);
 
   useEffect(() => {
-    localStorage.getItem("todos", JSON.stringify(todos)); // JSON object to string
+    localStorage.setItem("todos", JSON.stringify(todos)); // JSON object to string
   }, [todos]);
 
   return (
     <TodoProvider
       value={{ todos, addTodo, updateTodo, deleteTodo, toggleComplete }}
     >
-      <div className="bg-[#172842] min-h-screen py-8">
+      <div className="bg-[#172842]  min-h-screen py-8">
         <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
           <h1 className="text-2xl font-bold text-center mb-8 mt-2">
-            Manage Your Todos
+            Just Do It...
           </h1>
           <div className="mb-4">
             {/* Todo form goes here */}
