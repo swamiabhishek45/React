@@ -1,14 +1,11 @@
-import Card from "./components/Card"
-import Footer from "./components/Footer"
-import Item from "./components/Item";
-import Navbar from "./components/Navbar"
+import React from 'react'
 
 function App() {
   return (
-    <>
+    <div>
       
-    </>
-  );
+    </div>
+  )
 }
 
 export default App

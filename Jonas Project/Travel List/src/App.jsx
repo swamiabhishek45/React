@@ -1,20 +1,30 @@
-// import './App.css'
-import Form from "./components/Form";
-import Logo from "./components/Logo";
-import PackingList from "./components/PackingList.jsx";
-import Stats from "./components/Stats";
+import "./App.css";
 
+export default function App() {
+  return <>
+  <Logo />
+  <Form />
+  <PackingList />
+  <Stats />
+  </>;
+}
 
+function Logo() {
+  return <h1>🌴 Far Away🎒</h1>;
+}
 
-function App() {
+function Form() {
   return (
-    <div className="app">
-      <Logo />
-      <Form />
-      <PackingList />
-      <Stats />
+    <div className="add-form">
+      <h3>What do you need for your trip?</h3>
     </div>
   );
 }
 
-export default App;
+function PackingList() {
+  return <div className="list">LIST</div>
+}
+
+function Stats() {
+  return <footer className="footer">you have X items on ypur list, and you already packed X (X%)</footer>
+}
