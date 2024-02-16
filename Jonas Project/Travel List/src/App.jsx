@@ -1,5 +1,3 @@
-import "./App.css";
-
 export default function App() {
   return <>
   <Logo />
@@ -26,5 +24,5 @@ function PackingList() {
 }
 
 function Stats() {
-  return <footer className="footer">you have X items on ypur list, and you already packed X (X%)</footer>
+  return <footer className="stats">you have X items on ypur list, and you already packed X (X%)</footer>
 }

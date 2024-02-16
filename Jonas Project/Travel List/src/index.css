@@ -27,6 +27,7 @@ body {
 
 h1 {
   text-align: center;
+  color: #5a3e2b;
   background-color: #f4a226;
   font-family: "Monoton";
   font-size: 8rem;
@@ -44,6 +45,7 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
+  color: #5a3e2b;
 }
 
 h3 {
@@ -126,6 +128,7 @@ input[type="checkbox"] {
 
 .stats {
   background-color: #76c7ad;
+  color: #5a3e2b;
   text-align: center;
   font-weight: 700;
   padding: 3.2rem 0;
