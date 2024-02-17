@@ -1,11 +1,10 @@
-import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { removeTodo, updateTodo } from "../features/todo/todoSlice";
+import React from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+import { removeTodo, updateTodo } from '../features/todo/todoSlice';
 
-function Todos() {
-  const todos = useSelector((state) => state.todos);
-  const dispatch = useDispatch();
-
+function Todo() {
+    const todos = useSelector(state => state.todos)
+    const dispatch = useDispatch();
   return (
     <>
       <h1 className="text-2xl m-5">Your Todos</h1>
@@ -61,4 +60,4 @@ function Todos() {
   );
 }
 
-export default Todos;
+export default Todo

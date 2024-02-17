@@ -1,9 +1,13 @@
 import React from 'react'
+import AddTodo from './components/addTodo'
+import Todo from './components/Todo'
 
 function App() {
   return (
     <div>
-      <h1>mamala thik hai</h1>
+      
+      <AddTodo />
+      <Todo />
     </div>
   )
 }
