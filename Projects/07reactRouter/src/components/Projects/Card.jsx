@@ -5,7 +5,7 @@ function Card(props) {
   return (
     <div className="w-[300px] rounded-md border mb-10 dark:border-gray-600">
       <img
-        src={props.img}
+        src={props.src}
         alt="img"
         className="h-[200px] w-full rounded-t-md object-cover"
       />
