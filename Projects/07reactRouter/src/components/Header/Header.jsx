@@ -47,7 +47,7 @@ export default function Header() {
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${
                       isActive ? "text-orange-700" : "to-gray-700"
-                    } border-b border-gray-100 hover:bg-gray-50 dark:border-gray-600 dark:hover:bg-gray-800 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                    } border-b border-gray-100 hover:bg-gray-50 dark:border-gray-600 dark:hover:bg-gray-800 sm:dark:hover:bg-gray-900 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }
                 >
                   Home
@@ -59,7 +59,7 @@ export default function Header() {
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${
                       isActive ? "text-orange-700" : "to-gray-700"
-                    } border-b border-gray-100 hover:bg-gray-50 dark:border-gray-600 dark:hover:bg-gray-800 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                    } border-b border-gray-100 hover:bg-gray-50 dark:border-gray-600 sm:dark:hover:bg-gray-900 dark:hover:bg-gray-800 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }
                 >
                   About
@@ -69,9 +69,10 @@ export default function Header() {
                 <NavLink
                   to="/projects"
                   className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${
+                    `block py-2 pr-4 pl-3 duration-200 
+                    ${
                       isActive ? "text-orange-700" : "to-gray-700"
-                    } border-b border-gray-100 hover:bg-gray-50  dark:border-gray-600 dark:hover:bg-gray-800 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                    } border-b border-gray-100 hover:bg-gray-50  dark:border-gray-600 sm:dark:hover:bg-gray-900 dark:hover:bg-gray-800 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }
                 >
                   My Projects
@@ -83,7 +84,7 @@ export default function Header() {
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 ${
                       isActive ? "text-orange-700" : "to-gray-700"
-                    } border-b border-gray-100 hover:bg-gray-50 dark:border-gray-600 dark:hover:bg-gray-800 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                    } border-b border-gray-100 hover:bg-gray-50 dark:border-gray-600 sm:dark:hover:bg-gray-900 dark:hover:bg-gray-800 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }
                 >
                   Github
@@ -97,7 +98,7 @@ export default function Header() {
                     `block py-2 pr-4 pl-3 duration-200 ${
                       isActive ? "text-orange-700" : "to-gray-700"
                     } border-b border-gray-100 
-                     dark:border-gray-600 dark:hover:bg-gray-800 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                     dark:border-gray-600 sm:dark:hover:bg-gray-900 dark:hover:bg-gray-800 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }
                 >
                   Contact Us

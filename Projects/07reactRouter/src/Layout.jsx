@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 import Header from "./components/Header/Header";
-import Footer from './components/Footer/Footer'
-import { Outlet } from 'react-router-dom';
-import { ThemeProvider } from './context/theme';
+import Footer from "./components/Footer/Footer";
+import { Outlet } from "react-router-dom";
+import { ThemeProvider } from "./context/theme";
+import About from "./components/About/About";
+import Education from "./components/About/Qualification";
 
 function Layout() {
   const [themeMode, setThemeMode] = useState("light");
@@ -25,10 +27,13 @@ function Layout() {
   return (
     <ThemeProvider value={{ themeMode, lightTheme, darkTheme }}>
       <Header />
-      <Outlet />
+      <Outlet>
+        <About />
+        <Outlet />
+      </Outlet>
       <Footer />
     </ThemeProvider>
   );
 }
 
-export default Layout
+export default Layout;

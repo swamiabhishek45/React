@@ -1,4 +1,6 @@
-import React from 'react'
+import React from "react";
+import Education from "./Qualification";
+import { NavLink, Outlet } from "react-router-dom";
 
 export default function About() {
   return (
@@ -12,21 +14,50 @@ export default function About() {
               width={400}
             />
           </div>
-          <div className="md:7/12 lg:w-6/12">
-            <h2 className="text-2xl text-gray-900 dark:text-white font-bold md:text-4xl">
-              React development is carried out by passionate developers
-            </h2>
-            <p className="mt-6 text-gray-600">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
-              omnis voluptatem accusantium nemo perspiciatis delectus atque
-              autem! Voluptatum tenetur beatae unde aperiam, repellat expedita
-              consequatur! Officiis id consequatur atque doloremque!
-            </p>
-            <p className="mt-4 text-gray-600">
-              Nobis minus voluptatibus pariatur dignissimos libero quaerat iure
-              expedita at? Asperiores nemo possimus nesciunt dicta veniam
-              aspernatur quam mollitia.
-            </p>
+          <div
+            className="md:7/12 lg:w-6/12 relative 
+          sm:bottom-40"
+          >
+            <ul
+              className={`items-center justify-center sm:dark:bg-gray-900 xl:bg-white p-1 text-muted-foreground rounded-[30px] dark:md:bg-secondary w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none`}
+            >
+              <li>
+                <NavLink
+                  to="/about/personal"
+                  className={({ isActive }) =>
+                    `${
+                      isActive ? "bg-orange-700 text-white" : "to-gray-700"
+                    } inline-flex items-center justify-center whitespace-nowrap rounded-full px-10 py-1.5 text-base font-medium transition-all h-[48px] w-[162px] xl:w-auto`
+                  }
+                >
+                  Personal Info
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/about/qualification"
+                  className={({ isActive }) => ` ${
+                    isActive ? "bg-orange-700 text-white" : "to-gray-700"
+                  }
+                  inline-flex items-center justify-center whitespace-nowrap rounded-full px-10 py-1.5 text-base font-medium transition-all h-[48px] w-[162px] xl:w-auto`}
+                >
+                  Qualifications
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/about/skills"
+                  className={({ isActive }) =>
+                    ` ${
+                      isActive ? "bg-orange-700 text-white" : "to-gray-700"
+                    } inline-flex items-center justify-center whitespace-nowrap rounded-full px-16 py-1.5 text-base font-medium transition-all h-[48px] w-[162px] xl:w-auto`
+                  }
+                >
+                  Skills
+                </NavLink>
+              </li>
+            </ul>
+            <Outlet />
           </div>
         </div>
       </div>
