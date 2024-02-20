@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import HTML from "../../assets/html.svg";
 
 function Skills() {
   return (
     <div>
-      <h1>THis is skills</h1>
+      <img src={HTML} alt="" />
     </div>
-  )
+  );
 }
 
-export default Skills
+export default Skills;

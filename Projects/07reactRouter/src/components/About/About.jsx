@@ -15,11 +15,11 @@ export default function About() {
             />
           </div>
           <div
-            className="md:7/12 lg:w-6/12 relative 
+            className="md:7/12 lg:w-6/12 relative top-1 
           sm:bottom-40"
           >
             <ul
-              className={`items-center justify-center sm:dark:bg-gray-900 xl:bg-white p-1 text-muted-foreground rounded-[30px] dark:md:bg-secondary w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none`}
+              className={`items-center  justify-center sm:dark:bg-gray-900 xl:bg-white p-1 text-muted-foreground rounded-[30px] dark:md:bg-secondary w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none`}
             >
               <li>
                 <NavLink
