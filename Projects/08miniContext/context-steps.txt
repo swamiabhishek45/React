@@ -1,4 +1,6 @@
 Context API Step by Step
+
+
 // step 1 : create context
 
 import { createContext } from 'react'
@@ -10,8 +12,6 @@ export const counterContext = createContext(0)
 import counterContext from './counterContext'
 
 <counterContext.Provider value={count}>
-
-
     <Navbar />
 </counterContext.Provider>
 
