@@ -1,34 +1,31 @@
-import React, { useCallback, useState } from "react";
-// import AddTodo from './components/addTodo'
-// import Todo from './components/Todo'
+import React, { useState } from "react";
 import "./App.css";
-import Navbar from "./components/Navbar";
 
 function App() {
   const [counter, setCounter] = useState(0);
-  const [adjective, setAdjective] = useState("Bad");
 
-
-  // useCallback freeze this function
-  const getAdjective = useCallback(() => {
-    setAdjective("Bad");
-    return counter
-  }, [counter]);
-
-  const handleCLick = () => {
+  const onIncrease = () => {
     setCounter(counter + 1);
+  };
+  const onDecrease = () => {
+    setCounter(counter - 1);
   };
 
   return (
-    <div className="text-white text-2xl">
-      <Navbar adjective={"Good"} getAdjective={getAdjective} />
-
-      <button
-        className="bg-gray-800 p-2 px-4 rounded-full mt-4"
-        onClick={handleCLick}
-      >
-        Counter: {counter}
-      </button>
+    <div className="border-2 mx-auto  w-3/12 p-6 h-44 rounded-3xl">
+      <div className="text-6xl font-bold text-center">{counter}</div>
+      <div className="flex justify-between">
+        <div className="border-2 w-10 h-10 items-center flex justify-center mt-6 rounded-full">
+          <button onClick={onDecrease} className="text-4xl">
+            -
+          </button>
+        </div>
+        <div className="border-2 w-10 h-10 items-center flex justify-center mt-6 rounded-full">
+          <button onClick={onIncrease} className="text-4xl">
+            +
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
