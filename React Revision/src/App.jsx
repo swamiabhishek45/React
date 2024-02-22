@@ -10,7 +10,7 @@ function App() {
   const onDecrease = () => {
     setCounter(counter - 1);
   };
-
+  
   return (
     <div className="border-2 mx-auto  w-3/12 p-6 h-44 rounded-3xl">
       <div className="text-6xl font-bold text-center">{counter}</div>
