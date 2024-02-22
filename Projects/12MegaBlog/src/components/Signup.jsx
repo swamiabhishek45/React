@@ -75,6 +75,7 @@ function Signup() {
             placeholder="Enter your password"
             type="password"
             {...register("password", {
+              
               required: true,
             })}
           />
