@@ -17,8 +17,10 @@ function App() {
   };
 
   const onSubmit = async (data) => {
-    await delay(2); // simulating network delay
-    console.log(data);
+    // await delay(2); // simulating network delay
+    let r = await fetch("https://localhost:3000/", { method: "POST" });
+    let res = await r.text();
+    console.log(data, res);
   };
   return (
     <>
