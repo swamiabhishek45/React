@@ -18,7 +18,7 @@ function Home() {
       <div className="w-full bg-black">
         <Container>
           <div className="  relative isolate z-0 px-6 lg:px-8">
-            <div className="relative mx-auto max-w-2xl py-52">
+            <div className="relative mx-auto max-w-2xl py-28 pb-52">
               <div className="absolute inset-x-0 -top-[4rem] -z-10 transform-gpu overflow-hidden blur-3xl md:-top-[10rem]">
                 <svg
                   className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem] mt-4"
@@ -47,12 +47,10 @@ function Home() {
               </div>
               <div className="text-center">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-300 sm:text-6xl">
-                  Lorem ipsum dolor sit amet consectetur dicta.
+                  Meet TreeTopTales: Your new home to write anything
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-500">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                  qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                  occaecat fugiat aliqua.
+                  Write your personal thoughts alog with photos. Create a unique and beautiful blog. It's easy and free.
                 </p>
                 <div className="mt-10 flex items-center justify-center gap-x-2">
                   <button
