@@ -7,7 +7,8 @@ import Grad from "../../assets/grad.svg";
 
 function PersonalInfo() {
   return (
-    <div className="flex flex-col items-center justify-start w-full h-auto mt-2 gap-3 text-lg sm:items-start">
+    <>
+    <div className="flex flex-col items-center  justify-start w-full h-auto ml-10 mt-10 gap-3 text-lg sm:items-start">
       <div className="flex gap-4 text-black dark:text-white ">
         <img src={ProfilePic} alt="profilepic" /> <span>Abhishek Swami</span>
       </div>
@@ -30,6 +31,7 @@ function PersonalInfo() {
         <span>B. Tech (Computer Science)</span>
       </div>
     </div>
+    </>
   );
 }
 
