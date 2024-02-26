@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 function Background() {
   return (
     <>
-      <div className="relative w-full h-screen bg-zinc-800">
+      <div className="fixed z-[2] w-full h-screen ">
         <div className="w-full py-10 flex justify-center text-zinc-600 absolute top-[5%] font-semibold text-xl">
           Documents
         </div>
@@ -15,4 +15,4 @@ function Background() {
   );
 }
 
-export default Background
+export default Background;
