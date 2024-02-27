@@ -8,8 +8,8 @@ function ForeGround() {
     //desc, filesize, close, tagDetails
 
     {
-      desc: "lorem ispum doloe sit amer sonnk seklrhoi askndfjo nsdfiho",
-      filesize: ".9mb",
+      desc: "lorem ispum doloe sit amer sonnk seklrhoi askndfjo nsdfiho afdkjhfla adfjahdsfio adhfiusd sdiufgbsod ",
+      filesize: ".10mb",
       close: false,
       tagDetails: {
         isOpen: true,
@@ -18,8 +18,8 @@ function ForeGround() {
       },
     },
     {
-      desc: "lorem ispum doloe sit amer sonnk seklrhoi askndfjo nsdfiho",
-      filesize: ".9mb",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, incidunt?",
+      filesize: ".5mb",
       close: true,
       tagDetails: {
         isOpen: true,
@@ -28,8 +28,8 @@ function ForeGround() {
       },
     },
     {
-      desc: "lorem ispum doloe sit amer sonnk seklrhoi askndfjo nsdfiho",
-      filesize: ".9mb",
+      desc: "lorem ispum doloe sit amer sonnk",
+      filesize: ".34mb",
       close: true,
       tagDetails: {
         isOpen: false,
