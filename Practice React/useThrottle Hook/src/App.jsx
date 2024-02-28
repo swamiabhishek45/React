@@ -3,13 +3,13 @@ import "./App.css";
 import useThrottle from "./hooks/useThrottle";
 
 function App() {
-  const [windowSize, setWindoSize] = useState({
+  const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
   });
 
   const handleResize = () => {
-    setWindoSize({
+    setWindowSize({
       width: window.innerWidth,
       height: window.innerHeight,
     });
