@@ -15,7 +15,7 @@ function App() {
     });
   };
 
-  const throttleHandleResize = useThrottle(handleResize, 500);
+  const throttleHandleResize = useThrottle(handleResize, 1000);
 
   useEffect(() => {
     window.addEventListener("resize", throttleHandleResize);

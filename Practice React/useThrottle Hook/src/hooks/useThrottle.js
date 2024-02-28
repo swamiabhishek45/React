@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const useThrottle = (value, delay) => {
     // Initial State --> Create a state to hold the throttled value using useState()
